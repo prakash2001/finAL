@@ -15,8 +15,8 @@ sampleForm.addEventListener("submit", async (e) => {
   let url ="http://localhost:8081/web/check";
   let urlSubmit = "http://localhost:8081/web/save";
   console.log(url); 
-  const jsonobject = JSON.stringify({first_name:"Rakesh Rahul"});
-  console.log(jsonobject);
+  // const jsonobject = JSON.stringify({first_name:"Rakesh Rahul"});
+  // console.log(jsonobject);
   try {
     
     await getResponseCheck(url);
@@ -72,7 +72,7 @@ async function postFormCheck(url, obj) {
   const body = await res.json();
   console.log(body.message);  
 
-  location.replace("newpage.html"); 
+   location.replace("newpage.html"); 
    
   if (!res.ok) {
     console.log("In error block");
