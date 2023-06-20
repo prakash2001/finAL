@@ -12,6 +12,7 @@ sampleForm.addEventListener("submit", async (e) => {
         obj[item.name] = item.value;
     }
 
+  console.log(obj);
   let url ="http://localhost:8081/web/check";
   let urlSubmit = "http://localhost:8081/web/save";
   console.log(url); 
